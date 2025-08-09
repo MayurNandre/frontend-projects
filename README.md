@@ -1,4 +1,3 @@
-# Frontend Projects Collection
 # 🚀 Frontend Projects Collection
 
 This repository contains a collection of my frontend projects built using **HTML**, **CSS**, **JavaScript**, and **React.js**.  
@@ -73,13 +72,12 @@ Each project focuses on **responsive UI**, **interactive features**, and **moder
 
 ---
 
+
 ## 📌 How to Run
-```bash
-# Clone the repository
-git clone https://github.com/MayurNandre/frontend-projects.git
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MayurNandre/frontend-projects.git
 
-# Open any project folder in your code editor
+2.Open any project folder in your code editor
 
-# Launch index.html in your browser to view the project
-
-
+3.Launch index.html in your browser to view the project
