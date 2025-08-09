@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-main: #464646;
+    --bg-card: #2d2727;
+    --border-color: #efc745;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    background-color: var(--bg-main);
+}
+
+
+h1 {
+    margin-left: 4.5rem;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3.5rem;
+}
+
+span {
+    color: var(--border-color);
+}
+
+#card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+
+/* commented css used to build logic first */
+
+/* .card{
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--bg-card);
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: .6rem;
+    box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+}
+
+.card-selected{
+    border: .2rem solid var(--border-color);
+}
+
+.card-matched{
+border: .2rem solid purple;
+} */
+
+
+.card {
+    position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+}
+
+.card,
+.back-card,
+.front-card {
+    height: 8rem;
+    width: 8rem;
+}
+
+.back-card,
+.front-card {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-card {
+    background: var(--border-color);
+    background-size: contain;
+    border-radius: .6rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+
+.back-card {
+transform: rotateY(-180deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+}
+
+.card-selected{
+    transform: rotateY(180deg);
+}
+
+.card-matched .front-card{
+background-color: var(--bg-card);
+}
+
+#refresh{
+text-decoration: none;
+color: rgb(58, 58, 58);
+background-color: rgb(90, 255, 90);
+border-radius: 5px;
+padding: 6px;
+}
+#refresh:hover{
+    background-color: rgb(0, 255, 0);
+    padding: 6.5px;
+}

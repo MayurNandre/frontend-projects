@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#Myname {
+    color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    font-size: 25px;
+    padding: 10px 10px 0 10px;
+}
+
+nav {
+    background: rgb(44, 44, 44);
+    color: white;
+    height: 50px;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid black;
+    padding: 15px 10px;
+    margin: 7vh 5vw;
+    height: 80vh;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    border: 3px solid rgb(82, 82, 82);
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    transition: all 0.5s;
+}
+
+.box:hover {
+    text-shadow: 5px 10px 10px rgb(114, 81, 115);
+    background-color: #54545424;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+
+.info {
+    color: rgb(213, 110, 110);
+    margin-top: 10vh;
+}
+
+.big {
+    color: rgb(83, 189, 83);
+    font-size: 8vh;
+    text-shadow: 2px 0px 3px rgb(71, 71, 71);
+}
+
+#reset {
+    padding: 5px 0;
+    color: rgb(255, 255, 255);
+    background-color: #0b1237;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10vh;
+    font-weight: bold;
+    outline: none;
+    border-radius: 8px;
+    width: 13vw;
+    transition: 0.4s;
+}
+
+#reset:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+
+.line{
+    background-color: black;
+    width: 20vw;
+    position:absolute;
+    height: 3px;
+}
+
+@media (max-width:800px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 4px;
+        font-size: 15px;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 12vw);
+        grid-template-rows: repeat(3, 12vw);
+    }
+
+    .gameContainer {
+        flex-direction: column;
+    }
+
+    .big {
+        font-size: 5vh;
+    }
+
+    .info,
+    #reset {
+        margin-top: 3vh;
+    }
+
+    #reset {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .gameInfo {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:525px) {
+    .container {
+        grid-template-columns: repeat(3, 17vw);
+        grid-template-rows: repeat(3, 17vw);
+    }
+}

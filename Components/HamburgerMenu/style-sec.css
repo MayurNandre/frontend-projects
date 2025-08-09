@@ -1,0 +1,11 @@
+
+body{
+    display:flex;
+    flex-direction: row;
+}
+#section{
+    background-color:blueviolet;
+    width:100vw;
+    height: 60vh;
+    z-index:-90;
+}
