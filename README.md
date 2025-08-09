@@ -78,6 +78,6 @@ Each project focuses on **responsive UI**, **interactive features**, and **moder
    ```bash
    git clone https://github.com/MayurNandre/frontend-projects.git
 
-2.Open any project folder in your code editor
+  2. Open any project folder in your code editor
 
-3.Launch index.html in your browser to view the project
+  3. Launch index.html in your browser to view the project
